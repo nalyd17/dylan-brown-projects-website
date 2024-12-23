@@ -8,7 +8,7 @@ export default function Profile() {
         <div className="max-w-none flex flex-col md:flex-row items-center gap-8">
           <div className="w-48 h-48 rounded-full overflow-hidden bg-gray-200 flex-shrink-0">
             <img
-              src="/public/DylanHeadshot.png"
+              src="DylanHeadshot.png"
               alt="Dylan Headshot"
               className="w-full h-full object-cover"
             />
