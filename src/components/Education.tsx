@@ -1,40 +1,29 @@
 import React from 'react';
-import { MapPin } from 'lucide-react';
 
-export default function Profile() {
+export default function Education() {
   return (
-    <section id="profile" className="pt-24 pb-16 bg-ceramic-100">
+    <section id="education" className="py-16 bg-ceramic-100">
       <div className="container mx-auto px-4">
-        <div className="max-w-none flex flex-col md:flex-row items-center gap-8">
-          <div className="w-48 h-48 rounded-full overflow-hidden bg-gray-200 flex-shrink-0">
+        <h2 className="text-3xl font-bold text-center mb-12 text-gray-800">
+          Education
+        </h2>
+        <div className="max-w-2xl mx-auto bg-white rounded-lg shadow-sm border-2 border-gray-200 p-6">
+          <div className="flex flex-col md:flex-row items-center justify-center gap-8">
             <img
-              src="/DylanHeadshot.png"
-              alt="Dylan Brown Headshot"
-              className="w-full h-full object-cover"
+              src="/ClemsonLogo.png"
+              alt="Clemson University Logo"
+              className="hidden md:block w-32 h-32 object-contain"
             />
-          </div>
-          <div className="flex-1 text-center md:text-left">
-            <h2 className="text-4xl font-bold text-gray-800 mb-2">
-              Dylan Brown
-            </h2>
-            <h3 className="text-xl text-accent-600 mb-2">
-              Software Development Manager
-            </h3>
-            <div className="flex items-center justify-center md:justify-start gap-2 text-gray-600 mb-6">
-              <MapPin size={20} />
-              <span>Austin, TX</span>
+            <div className="text-center">
+              <h3 className="text-xl font-bold text-gray-800">
+                Clemson University
+              </h3>
+              <p className="text-gray-600 mb-2">2015 - 2018</p>
+              <p className="text-gray-700">
+                Bachelor of Science in Computer Science
+              </p>
+              <p className="text-gray-600">Minor in Financial Management</p>
             </div>
-            <p className="text-gray-600 leading-relaxed">
-              Results-driven software manager with over 6 years of experience
-              leading high-performing engineering teams and delivering
-              large-scale, full-stack software solutions across diverse
-              industries. Leveraging a strong technical foundation in software
-              development and a C.S. degree, I combine hands-on coding expertise
-              with proven leadership capabilities. Known for driving team
-              excellence through effective communication, strategic planning,
-              and robust evaluation frameworks, I excel in aligning engineering
-              initiatives with business goals to deliver measurable outcomes.
-            </p>
           </div>
         </div>
       </div>
