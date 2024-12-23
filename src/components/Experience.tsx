@@ -38,7 +38,7 @@ const experiences = [
 
 export default function Experience() {
   return (
-    <section id="experience" className="py-16 bg-white">
+    <section id="experience" className="py-16 bg-ceramic-100">
       <div className="container mx-auto px-4">
         <h2 className="text-3xl font-bold text-center mb-12 text-gray-800">Work Experience</h2>
         <div className="space-y-8">
@@ -50,7 +50,7 @@ export default function Experience() {
               <div className="flex flex-col md:flex-row md:items-center justify-between mb-4">
                 <div>
                   <h3 className="text-xl font-bold text-gray-800">{exp.title}</h3>
-                  <p className="text-blue-600 font-semibold">{exp.company}</p>
+                  <p className="text-accent-600 font-semibold">{exp.company}</p>
                 </div>
                 <div className="flex items-center gap-2 text-gray-600 mt-2 md:mt-0">
                   <Calendar size={20} />
