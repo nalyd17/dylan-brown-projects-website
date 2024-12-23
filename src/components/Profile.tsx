@@ -1,5 +1,5 @@
-import React from 'react';
-import { MapPin } from 'lucide-react';
+import React from "react";
+import { MapPin } from "lucide-react";
 
 export default function Profile() {
   return (
@@ -29,11 +29,12 @@ export default function Profile() {
               leading high-performing engineering teams and delivering
               large-scale, full-stack software solutions across diverse
               industries. Leveraging a strong technical foundation in software
-              development and a C.S. degree, I combine hands-on coding expertise
-              with proven leadership capabilities. Known for driving team
-              excellence through effective communication, strategic planning,
-              and robust evaluation frameworks, I excel in aligning engineering
-              initiatives with business goals to deliver measurable outcomes.
+              development and a Computer Science degree, I combine hands-on
+              coding expertise with proven leadership capabilities. Known for
+              driving team excellence through effective communication, strategic
+              planning, and robust evaluation frameworks, I excel in aligning
+              engineering initiatives with business goals to deliver measurable
+              outcomes.
             </p>
           </div>
         </div>
