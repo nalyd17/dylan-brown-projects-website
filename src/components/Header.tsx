@@ -9,7 +9,8 @@ interface NavItem {
 const navItems: NavItem[] = [
   { label: 'Profile', href: '#profile' },
   { label: 'Skills', href: '#skills' },
-  { label: 'Work Experience', href: '#experience' },
+  { label: 'Experience', href: '#experience' },
+  { label: 'Projects', href: '#projects' },
   { label: 'Education', href: '#education' },
 ];
 
