@@ -1,5 +1,5 @@
 import React from 'react';
-import { MapPin } from 'lucide-react';
+import { MapPin, Linkedin } from 'lucide-react';
 
 export default function Profile() {
   return (
@@ -15,9 +15,20 @@ export default function Profile() {
               />
             </div>
             <div className="flex-1 text-center md:text-left">
-              <h2 className="text-4xl font-bold text-gray-800 mb-2">
-                Dylan Brown
-              </h2>
+              <div className="flex items-center justify-center md:justify-start gap-4 mb-2">
+                <h2 className="text-4xl font-bold text-gray-800">
+                  Dylan Brown
+                </h2>
+                <a
+                  href="https://www.linkedin.com/in/dylan-brown-63a670135"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-gray-600 hover:text-blue-600 transition-colors"
+                  aria-label="LinkedIn Profile"
+                >
+                  <Linkedin size={32} />
+                </a>
+              </div>
               <h3 className="text-xl text-accent-600 mb-2">
                 Software Development Manager
               </h3>
