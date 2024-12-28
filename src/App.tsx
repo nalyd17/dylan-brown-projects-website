@@ -1,4 +1,3 @@
-import React from 'react';
 import Header from './components/Header';
 import Profile from './components/Profile';
 import Skills from './components/Skills';
@@ -8,9 +7,9 @@ import Projects from './components/Projects';
 
 function App() {
   return (
-    <div className="min-h-screen bg-ceramic-50">
+    <div className="min-h-screen bg-ceramic-100">
       <Header />
-      <main>
+      <main className="container mx-auto">
         <Profile />
         <Experience />
         <Projects />

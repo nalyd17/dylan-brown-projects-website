@@ -1,9 +1,6 @@
-import React from 'react';
-
 export default function Education() {
   return (
-    <section id="education" className="py-16 bg-ceramic-100">
-      <div className="container mx-auto px-4">
+    <section id="education" className="py-16 px-4 bg-ceramic-100">
         <h2 className="text-3xl font-bold text-center mb-12 text-gray-800">
           Education
         </h2>
@@ -26,7 +23,6 @@ export default function Education() {
             </div>
           </div>
         </div>
-      </div>
     </section>
   );
 }

@@ -1,4 +1,3 @@
-import React from 'react';
 import { Calendar } from 'lucide-react';
 
 const experiences = [
@@ -38,33 +37,31 @@ const experiences = [
 
 export default function Experience() {
   return (
-    <section id="workexperience" className="py-16 bg-ceramic-100">
-      <div className="container mx-auto px-4">
-        <h2 className="text-3xl font-bold text-center mb-12 text-gray-800">Work Experience</h2>
-        <div className="space-y-8">
-          {experiences.map((exp, index) => (
-            <div
-              key={index}
-              className="bg-white border border-gray-200 rounded-lg p-6 hover:shadow-lg transition-shadow"
-            >
-              <div className="flex flex-col md:flex-row md:items-center justify-between mb-4">
-                <div>
-                  <h3 className="text-xl font-bold text-gray-800">{exp.title}</h3>
-                  <p className="text-accent-600 font-semibold">{exp.company}</p>
-                </div>
-                <div className="flex items-center gap-2 text-gray-600 mt-2 md:mt-0">
-                  <Calendar size={20} />
-                  <span>{exp.period}</span>
-                </div>
+    <section id="workexperience" className="py-16 px-4 bg-ceramic-100">
+      <h2 className="text-3xl font-bold text-center mb-12 text-gray-800">Work Experience</h2>
+      <div className="space-y-8">
+        {experiences.map((exp, index) => (
+          <div
+            key={index}
+            className="bg-white border border-gray-200 rounded-lg p-6 hover:shadow-lg transition-shadow"
+          >
+            <div className="flex flex-col md:flex-row md:items-center justify-between mb-4">
+              <div>
+                <h3 className="text-xl font-bold text-gray-800">{exp.title}</h3>
+                <p className="text-accent-600 font-semibold">{exp.company}</p>
               </div>
-              <ul className="list-disc list-inside space-y-2 text-gray-600">
-                {exp.responsibilities.map((resp, idx) => (
-                  <li key={idx} className="pl-2">{resp}</li>
-                ))}
-              </ul>
+              <div className="flex items-center gap-2 text-gray-600 mt-2 md:mt-0">
+                <Calendar size={20} />
+                <span>{exp.period}</span>
+              </div>
             </div>
-          ))}
-        </div>
+            <ul className="list-disc list-inside space-y-2 text-gray-600">
+              {exp.responsibilities.map((resp, idx) => (
+                <li key={idx} className="pl-2">{resp}</li>
+              ))}
+            </ul>
+          </div>
+        ))}
       </div>
     </section>
   );
